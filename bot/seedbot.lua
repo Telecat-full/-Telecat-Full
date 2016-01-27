@@ -219,31 +219,34 @@ function create_config( )
     "download_media",
     "invite",
     "all",
+    "Auto_Leave",
+    "Block",
+    "Calculator",
+    "GPS",
+    "LinkPv",
+    "Location",
+    "TagAll",
+    "antitag",
+    "echo",
+    "feedback",
+    "google",
+    "sendpv",
+    "ver",
+    "webshot",
     "leave_ban"
     },
     sudo_users = {110626080,103649648,111020322,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v2 - Open Source
-An advance Administration bot based on yagop/telegram-bot 
-
-https://github.com/SEEDTEAM/TeleSeed
-
-Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@Rondoozle [Developer]
-@seyedan25 [Manager]
-
-Special thanks to
-awkward_potato
-Siyanew
-topkecleon
-Vamptacus
-
-Our channels
-@teleseedch [English]
-@iranseed [persian]
+    about_text = [[Tele mirror v1
+    
+    Tele Mirror is best bot and ypou group manager😎
+    
+    sudo: @pouya_x_boy
+    
+    channel: 90@TeleMirrorch
+    
+    توجه:اسم ادمین هارو در این قسمت به هیچ عنوان نمی کذاریم
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -322,109 +325,79 @@ This command will send text to [group_id]
     help_text = [[
 Commands list :
 
-!kick [username|id]
-You can also do it by reply
-
-!ban [ username|id]
-You can also do it by reply
-
-!unban [id]
-You can also do it by reply
-
-!who
-Members list
-
-!modlist
-Moderators list
-
-!promote [username]
-Promote someone
-
-!demote [username]
-Demote someone
-
-!kickme
-Will kick user
-
-!about
-Group description
-
-!setphoto
-Set and locks group photo
-
-!setname [name]
-Set group name
-
-!rules
-Group rules
-
-!id
-return group id or user id
-
-!help
-
-!lock [member|name|bots|leave]	
-Locks [member|name|bots|leaveing] 
-
-!unlock [member|name|bots|leave]
-Unlocks [member|name|bots|leaving]
-
-!set rules <text>
-Set <text> as rules
-
-!set about <text>
-Set <text> as about
-
-!settings
-Returns group settings
-
-!newlink
-create/revoke your group link
-
-!link
-returns group link
-
-!owner
-returns group owner id
-
-!setowner [id]
-Will set id as owner
-
-!setflood [value]
-Set [value] as flood sensitivity
-
-!stats
-Simple message statistics
-
-!save [value] <text>
-Save <text> as [value]
-
-!get [value]
-Returns text of [value]
-
-!clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
-
-!res [username]
-returns user id
-"!res @username"
-
-!log
-will return group logs
-
-!banlist
-will return group ban list
-
-**U can use both "/" and "!" 
-
-
-*Only owner and mods can add bots in group
-
-
-*Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-*Only owner can use res,setowner,promote,demote and log commands
-
+feedback <text>
+ارسال نظر انتفادات و پیشنهادات خود
+kick <username,id>
+اخراج افراد همچنین می توان ریپلای اخراج کنید
+ban <username,id>
+بن کردن همچنین می توان با ریپلای بن کرد
+unban <username,id>
+در آوردن از بن همچنین با ریپلای هم میتوان از بن خارج کرد
+who
+لیست اعضا
+modlist
+لیست مدیرها
+promote <username>
+مدیر کردن افراد در گروه
+demote <username>
+خارجی کردن افراد از مدیریت
+kickme
+اخراج شدن شما از گروه
+about
+درباره گروه
+setphoto
+گذاشتن عکس برای گروه
+setname <name>
+تغییر نام گروه
+rules
+قوانین گروه
+id
+ایدی گروه
+help
+راهنمای دستورات
+lock <member,name,bots,leave
+قفل کردن اعضا نام ربات و لفت
+unlock <member,name,bots,leave>
+باز کردن قفل اعضا نام ربات و لفت
+set rules <text>
+تغییر قوانین گروه
+set about <text>
+تغییر موضوع گروه
+setting
+مشاهده تنظیمات گروه
+newlink
+ساخت لینک جدید
+link
+دریافت لینک
+owner
+مشاهده صاحب گروه
+setowner <id>
+تغغیر صاحب گروه
+setflood <value>
+حساسیب اسپو از 5 تا20
+clean <member,modlist.rules,about>
+پاک کردن ممبر مدیران قوانین موضوع
+res @username
+گرفتن ایدی توسط یوزر نیم
+banlist
+لیست بن شدگان
+ver
+مشاهده ورژن بات
+pv <id> <text>
+(فرستادن پیام به شخصی از طرف ربات(فقط سودو
+webshot <url>
+فرستادن اسکرین از صفحه اول سایت مورد نظر
+tagall <text>
+فرستادن متن در گروه با نمایش دادن همه
+google <favorite text.
+مشاهده نتایج جستسجو
+linkpv
+فرستادن لینک در پیوی
+_______________________
+و چند پلاگین دیگر
+توجه:ربات بدون دستور کار میکنه دستوراتم با حروف بزرگو کوچیک میتونید بزنید
+برای ساخت گپ به ایدی زیر ده استیکر بدید
+@pouya_x_boy
 ]]
   }
   serialize_to_file(config, './data/config.lua')
