@@ -306,12 +306,12 @@ local function run(msg, matches)
 end
 return {
   patterns = {
-    "^[!/]owners (%d+) ([^%s]+) (.*)$",
-    "^[!/]owners (%d+) ([^%s]+)$",
-    "^[!/](changeabout) (%d+) (.*)$",
-    "^[!/](changerules) (%d+) (.*)$",
-    "^[!/](changename) (%d+) (.*)$",
-		"^[!/](loggroup) (%d+)$"
+    "^[Oo][Ww][Nn][Ee][Rr][Ss] (%d+) ([^%s]+) (.*)$",
+    "^[Oo][Ww][Nn][Ee][Rr][Ss] (%d+) ([^%s]+)$",
+    "^([Cc][Hh][Aa][Nn][Gg][Ee][Aa][Bb][Oo][Uu][Tt]) (%d+) (.*)$",
+    "^([Cc][Hh][Aa][Nn][Gg][Ee][Rr][Uu][Ll][Ee][Ss]) (%d+) (.*)$",
+    "^([Cc][Hh][Aa][Nn][Gg][Ee][Nn][Aa][Mm][Ee]) (%d+) (.*)$",
+		"^([Ll][Oo][Gg][Gg][Rr][Oo][Uu][Pp]) (%d+)$"
   },
   run = run
 }
