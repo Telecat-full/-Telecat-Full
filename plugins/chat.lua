@@ -5,22 +5,22 @@ end
 if msg.text == "Hi" then
 	return "علیک"
 end
-if msg.text == "چطوری" then
+if msg.text == "چطوری میرور؟" then
 	return "به تو چه"
 end
-if msg.text == "خوبی؟" then
+if msg.text == "خوبی میرور؟" then
 	return "من اره"
 end
-if msg.text == "Salam" then
-	return "Salam aleykom"
+if msg.text == "Slm" then
+	return "ملت سلام کردن یادشون رفته"
 end
 if msg.text == "salam" then
-	return "va aleykol asalam"
+	return "girim aleyk"
 end
 if msg.text == "سلام" then
 	return "سلام رفیق"
 end
-if msg.text == "نگاییدم" then
+if msg.text == "میرور نگاییدم" then
 	return "ولی من گاییدم"
 end
 if msg.text == "ZAC" then
@@ -35,7 +35,7 @@ end
 if msg.text == "سیگار بده" then
 	return "معتاد عملی"
 end
-if msg.text == "salam dawsh" then
+if msg.text == "salam dawsh mirror" then
 	return "slm dada"
 end
 if msg.text == "?" then
@@ -56,8 +56,8 @@ return {
 		"^کیرم دهنت$",
 		"^[Hh]i",
 		"^[Zz]ac$",
-		"^چطوری$",
-		"^حوبی؟$",
+		"^چطوری میرور؟$",
+		"^خوبی میرور؟$",
 		"^سلام$",
 		"^بای$",
 		"^?$",
@@ -65,8 +65,10 @@ return {
 		"^پویا$",
 		"^سیگار بده$",
 		"^salam dawsh$",
+		"slm$",
+		"میرور نگاییدم$,
 		"^خوبم$",
-		"^گیت هابتو میدی؟"$
+		"^گیت هابتو میدی؟"$,
 		}, 
 	run = run,
     --privileged = true,
