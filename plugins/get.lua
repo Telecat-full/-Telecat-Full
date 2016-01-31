@@ -31,7 +31,7 @@ end
 
 return {
   patterns = {
-    "^([Gg][Ee][Tt}) (.+)$"
+    "^([Gg][Ee][Tt]) (.+)$"
   },
   run = run
 }
