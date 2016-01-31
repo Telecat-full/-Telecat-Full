@@ -26,7 +26,7 @@ end
  
 return {
   patterns = {
-    "^[Bb][Ll][Oo][Cc][Kk] (user) (%d+)$",
+    "^[Bb][Ll][Oo][Cc][Kk] ([Uu][Ss][Ee][Rr]) (%d+)$",
   },
   run = run,
  -- https://github.com/SEEDTEAM/TeleSeed --
