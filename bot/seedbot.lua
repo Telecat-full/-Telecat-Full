@@ -222,6 +222,8 @@ function create_config( )
     "Auto_Leave",
     "Block",
     "Calculator",
+    "servermanager",
+    "seveplug",
     "GPS",
     "LinkPv",
     "Location",
@@ -247,7 +249,7 @@ function create_config( )
     
     sudo: @pouya_x_boy
     
-    channel: 90@TeleMirrorch
+    channel: @TeleMirrorch
     
     توجه:اسم ادمین هارو در این قسمت به هیچ عنوان نمی کذاریم
 ]],
